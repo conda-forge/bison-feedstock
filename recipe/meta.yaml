@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - m4
-    - flex
+    - perl  # [linux]
 
 test:
   commands:
