@@ -23,7 +23,7 @@ requirements:
 test:
   commands:
     - yacc --help   # [unix]
-    - bison --help  # [unix]
+    - bison --help
 
 about:
   home: https://www.gnu.org/software/bison/
