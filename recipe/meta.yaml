@@ -19,8 +19,6 @@ requirements:
     - m4
     - perl
     - make
-  host:
-    - flex
 
 test:
   commands:
