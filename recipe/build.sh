@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export PERL=${BUILD_PREFIX}/bin/perl
-
 if [[ ${HOST} =~ .*linux.* ]]; then
   export CFLAGS="${CFLAGS} -lrt"
 fi
