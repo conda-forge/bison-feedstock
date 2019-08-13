@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 if [[ ${HOST} =~ .*linux.* ]]; then
   export CFLAGS="${CFLAGS} -lrt"
 fi
