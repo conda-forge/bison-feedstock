@@ -26,6 +26,8 @@ requirements:
     - {{posix}}libtool
     - {{posix}}m4
     - m2-automake-wrapper           # [win]
+    - m2-help2man                   # [win]
+    - m2-texinfo                    # [win]
   host:
     - {{posix}}flex
 
