@@ -26,6 +26,8 @@ requirements:
     - {{posix}}libtool
     - {{posix}}m4
     - m2-automake-wrapper           # [win]
+  host:
+    - {{posix}}flex
 
 
 test:
