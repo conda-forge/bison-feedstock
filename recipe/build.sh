@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -ex
 
 if [[ ${HOST} =~ .*linux.* ]]; then
   export CFLAGS="${CFLAGS} -lrt"
@@ -11,4 +11,8 @@ M4=m4 \
 make -j${CPU_COUNT} ${VERBOSE_AT}
 
 make check
-cat tests/testsuite.log
+make install
+
+strings ${PREFIX}/bin/bison | grep ${BUILD_PREFIX}/bin/m4 || exit 0
+echo "ERROR :: BUILD_PREFIX of ${BUILD_PREFIX}/bin/m4 found in ${PREFIX}/bin/bison"
+exit 1
