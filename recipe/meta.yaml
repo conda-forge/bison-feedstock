@@ -1,4 +1,4 @@
-{% set version = "3.4" %}
+{% set version = "3.6" %}
 
 package:
   name: bison
@@ -6,11 +6,11 @@ package:
 
 source:
   url: http://ftp.gnu.org/gnu/bison/bison-{{ version }}.tar.gz
-  sha256: ee1cc06f5e3d8615a5209cefaa2acd3da59b286d4d923cb6db5e6dbfae7a6c11
+  sha256: f630645e330bde5847266cc5c8194f0135ced75cced150358d9abe572b95f81c
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:
