@@ -1,4 +1,4 @@
-{% set version = "3.4" %}
+{% set version = "3.7.2" %}
 
 package:
   name: bison
@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://ftp.gnu.org/gnu/bison/bison-{{ version }}.tar.gz
-  sha256: ee1cc06f5e3d8615a5209cefaa2acd3da59b286d4d923cb6db5e6dbfae7a6c11
+  sha256: 415cd91044517bbfd8d135dea24e054501db238a5515edd9cdbb795ba3e82a84
 
 build:
   skip: true  # [win]
