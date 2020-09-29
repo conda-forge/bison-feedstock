@@ -24,6 +24,7 @@ requirements:
     - flex   # [build_platform != target_platform]
   host:
     - flex
+    - libiconv # [osx]
   run:
     - flex
 
