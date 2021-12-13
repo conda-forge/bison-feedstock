@@ -24,7 +24,7 @@ requirements:
     - flex   # [build_platform != target_platform]
   host:
     - flex
-    - libiconv # [osx]
+    - libiconv  # [osx]
   run:
     - flex
 
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://www.gnu.org/software/bison/
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: COPYING
   summary: General purpose parser generator converting annotated context-free grammar to a deterministic LR/GLR parser.
